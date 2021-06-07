@@ -45,14 +45,17 @@
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top bg-dark" id="mainNav">
     <div class="container">
 
       <button class="navbar-toggler navbar-toggler-right" type="button" 
               data-toggle="collapse" data-target="#navbarResponsive" 
               aria-controls="navbarResponsive" aria-expanded="false" 
               aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <div class="common-nav one"></div>
+        <div class="common-nav two"></div>
+        <div class="common-nav three"></div>
+        <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -228,6 +231,11 @@
                 <div class="card"> Bhavya Seth <br> <div class = "designation"> BCom, Narsee Monjee College of Commerce & Economics </div> </div>
                 <div class="card"> Devika J <br> <div class = "designation"> ACCA, CS, LPC Graduate, MA Medical Law Student </div> </div>
                 <div class="card"> Marsha Raghunath <br> <div class = "designation"> B.Sc Statistics, Lady Shri Ram College </div> </div>
+                <div class="card"> Kishore Kannan <br> <div class = "designation"> MBBS, Cuddalore Government Medical College </div> </div>
+                <div class="card"> Uday Kiran Kulkarni <br> <div class = "designation"> MBBS, MS Ramaiah Medical College , Bangalore </div> </div>
+                <div class="card"> Somnath Mukherjee <br> <div class = "designation"> CS, Symbiosis Law School </div> </div>
+                <div class="card"> Anugraha Vinayan <br> <div class = "designation"> Bachelor of Arts, Social Psychology, McMaster University </div> </div>
+
 
         </div>
      </div>
@@ -248,12 +256,40 @@
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
           <h2 class="section-heading text-white">
-          
-          <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
             Contact Us</h2>
           <hr class="divider black my-4" />
-          <p class="text-white">If you are interested to know more about us or have any queries, do reach out to us.</p>
-          
+          <h5 class="text-white">If you are interested to know more about us or have any queries, do reach out to us. We appreciate all sorts of feedback.</h5>
+          <br>
+          <form action="https://formsubmit.co/4a1d344ec2de98eed8fef771cf570ee5" method="POST" class="form-horizontal">
+
+            <!-- <fieldset id="fs-frm-inputs"> -->
+              <!-- <label for="full-name">Full Name</label> -->
+              <div class="form-group">
+                <input type="text" name="name" id="full-name" placeholder="Your Name" class="form-control" required>
+              </div>
+              <!-- <label for="email-address">Email Address</label> -->
+              <div class="form-group">
+                <input type="email" name="email" id="email-address" placeholder="Your Email" class="form-control" required>
+              </div>
+              <!-- <label for="message">Message</label> -->
+              <div class="form-group">
+                <textarea rows="5" name="message" id="message" placeholder="Your Message" class="form-control" required></textarea>
+              </div>
+
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" class="form-control">
+              <input type="hidden" name="_next" value="http://catalystomanedu.ml/thanks.html" />
+
+            <!-- </fieldset> -->
+            
+            <!-- Submit Button-->
+            
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl">Submit</button>
+            </div>
+        </form>
+
+
+
         </div>
       </div>
       
