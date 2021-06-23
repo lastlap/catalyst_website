@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+  <!-- <link rel="stylesheet" href="bootstrap.min(1).css"> -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <meta charset="utf-8">
   <meta property='og:title' content='Catalyst'/>
   <meta property='og:image' content='img/catalyst_small.jpg'/>
   <meta property='og:description' content='Catalyst Guidance and Mentorship'/>
   <meta property='og:url' content='https://catalystmuscat.com'/>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
 
 <style>
   .about_1 {
@@ -20,12 +26,418 @@
     /*top: -80px;*/
     text-align: center;
   }
-  #rotate-akansha {
+/*  #rotate-akansha {
     transform: rotate(35deg);
+  }*/
+
+  .fa {
+    color: #045184;
   }
+
+  .fa:hover {
+    color: #122f52;
+  }
+
+  .carousel .carousel-indicators li {background-color: #343a40;}
+
+/*  .carousel .carousel-control-prev-icon span {background-color: #343a40;}
+
+  .carousel .carousel-control-next-icon span {background-color: #343a40;}*/
+
+  .carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234d4d4d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234d4d4d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.catalyst_heading {
+  text-align: center;
+  color: #045184;
+  font-size: 17px;
+}
+
+.handle_overflow {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.owl-carousel {
+    display: flex;
+}
+
+.owl-carousel .item img {
+    /*width: auto;
+    height: 100%;*/
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: initial;
+}
+
+.center-image {
+  width: 120%;
+  margin: auto;
+  display: block;
+}
+
+.iim-indore {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.ramaiah {
+  width: 150%;
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+}
+
+div.scrollmenu {
+  /*background-color: #333;*/
+  overflow: auto;
+  white-space: nowrap;
+  /*margin: auto;
+  width: 50%;*/
+  /*padding: 10px;*/
+  text-align: center;
+}
+
+div.scrollmenu div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
 </style>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+  
+/*header h1{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+}
+  
+ header p{
+   text-align: center;
+   margin-bottom: 0;
+ }*/
+
+.hexa{
+  border: 0px;
+  float: left;
+  text-align: center;
+  height: 35px;
+  width: 60px;
+  font-size: 22px;
+  background: #f0f0f0;
+  color: #3c3c3c;
+  position: relative;
+  margin-top: 15px;
+}
+
+.hexa:before{
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  width: 0; 
+  height: 0;
+  border-bottom: 15px solid #f0f0f0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  top: -15px;
+}
+
+.hexa:after{
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  width: 0; 
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid #f0f0f0;
+  bottom: -15px;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  background: rgb(213,213,213);
+  background: -moz-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+  background: -o-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+  background: -ms-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+  background: linear-gradient(to bottom, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 2em 0;
+}
+
+.timeline .hexa{
+  width: 16px;
+  height: 10px;
+  position: absolute;
+  background: #00c4f3;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  margin-left:auto;
+  margin-right:auto;
+  top: -30px;
+  margin-top: 0;
+}
+
+.timeline .hexa:before {
+  border-bottom: 4px solid #00c4f3;
+  border-left-width: 8px;
+  border-right-width: 8px;
+  top: -4px;
+}
+
+.timeline .hexa:after {
+  border-left-width: 8px;
+  border-right-width: 8px;
+  border-top: 4px solid #00c4f3;
+  bottom: -4px;
+}
+
+.direction-l,
+.direction-r {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.flag-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(255,255,255);
+  font-weight: 600;
+  z-index: 15;
+  padding: 6px 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  height: 0;
+  width: 0;
+  margin-left: -8px;
+  border: solid transparent;
+  border-bottom-color: rgb(255,255,255);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.time-wrapper {
+  display: block;
+  position: relative;
+  margin: 4px 0 0 0;
+  z-index: 14;
+  line-height: 1em;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.direction-l .time-wrapper {
+  float: none;
+}
+
+.direction-r .time-wrapper {
+  float: none;
+}
+
+.time {
+  background: #00c4f3;
+  display: inline-block;
+  padding: 8px;
+}
+
+.desc {
+  position: relative;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 1em 0 0 0;
+  padding: 1em;
+  background: rgb(254,254,254);
+  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  box-shadow: 0 0 1px rgba(0,0,0,0.20);
+  z-index: 15;
+  text-align: center;
+  border-radius: 10px;
+  /*font-size: 16px;*/
+}
+
+.direction-l .desc,
+.direction-r .desc {
+  position: relative;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  z-index: 15;
+}
+
+@media(min-width: 768px){
+  .timeline {
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  
+  .timeline .hexa {
+    left: -28px;
+    right: auto;
+    top: 8px;
+  }
+
+  .timeline .direction-l .hexa {
+    left: auto;
+    right: -28px;
+  }
+
+  .direction-l {
+    position: relative;
+    width: 310px;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 310px;
+    float: right;
+    text-align: left;
+  }
+
+  .flag-wrapper {
+    display: inline-block;
+  }
+  
+  .flag {
+    font-size: 19px;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .direction-l .flag:after {
+    left: auto;
+    right: -16px;
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(254,254,254);
+    border-width: 8px;
+  }
+
+  .direction-r .flag:after {
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(254,254,254);
+    border-width: 8px;
+    left: -8px;
+  }
+
+  .time-wrapper {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .direction-l .time-wrapper {
+    float: left;
+  }
+
+  .direction-r .time-wrapper {
+    float: right;
+  }
+
+  .time {
+    padding: 5px 10px;
+  }
+
+  .direction-r .desc {
+    margin: 1em 0 0 0.75em;
+  }
+}
+
+@media(min-width: 992px){
+  .timeline {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .direction-l {
+    position: relative;
+    width: 380px;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 380px;
+    float: right;
+    text-align: left;
+  }
+}
+
+</style>
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
   <!-- Custom Title Bar -->
   <title>Catalyst</title>
@@ -43,7 +455,11 @@
   <link href="./css/creative.css" rel="stylesheet">
 
   <!-- Index CSS -->
-  <link href="./css/index.css" rel="stylesheet">  
+  <link href="./css/index.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- <script>
 
@@ -57,7 +473,7 @@
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-custom fixed-top bg-dark" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top bg-off-white" id="mainNav">
     <div class="container">
 
       <button class="navbar-toggler navbar-toggler-right" type="button" 
@@ -70,25 +486,27 @@
         <!-- <span class="navbar-toggler-icon"></span> -->
       </button>
 
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><div class="catalyst_heading"> <img src="img/catalyst_1.png" width="35" height="35"> &nbsp; Catalyst Muscat</div></a>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-off-white" href="#page-top">Home</a>
+            <a class="nav-link js-scroll-trigger text-black" href="#page-top" style="color:rgba(0, 0, 0, 0.8)">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-off-white" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger text-black" href="#about" style="color:rgba(0, 0, 0, 0.8)">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-off-white" href="#work">Links</a>
+            <a class="nav-link js-scroll-trigger text-black" href="#work" style="color:rgba(0, 0, 0, 0.8)">Links</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-off-white" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger text-black" href="#team" style="color:rgba(0, 0, 0, 0.8)">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-off-white" href="blog.html">Blog</a>
+            <a class="nav-link js-scroll-trigger text-black" href="blog.html" style="color:rgba(0, 0, 0, 0.8)">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-off-white" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger text-black" href="#contact" style="color:rgba(0, 0, 0, 0.8)">Contact</a>
           </li>
           
 
@@ -99,57 +517,98 @@
 
   <!--  Intro Section -->
 
-  <header class="masthead text-center text-black d-flex">
+  <!-- <header class="masthead text-center text-black d-flex"> -->
+    <section class="page-section bg-off-white">
     <div class="container my-auto">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <img src="img/title.png" 
-               class="img-fluid logo"
-               alt="Title" width="300" height="200">
-          <hr class="divider my-4" />
+          <!-- <img src="img/title.png" class="img-fluid logo" alt="Title" width="300" height="200"> -->
+          <!-- <hr class="divider my-4" /> -->
         </div>
         <div class="col-lg-8 mx-auto">
 
-          <img src="img/catalyst_1.png" 
-               class="img-fluid logo"
-               alt="Logo" width="200" height="200">
+          <!-- <img src="img/catalyst_1.png" class="img-fluid logo" alt="Logo" width="200" height="200"> -->
           <br><br><br>
-          <h3 class="text-center text-white mb-5 about_1"> We bring to you the experts who have walked down your dream paths and have emerged winners!</h3>
+          <!-- <h3 class="text-center text-black mb-5 about_1"> We bring to you the experts who have walked down your dream paths and have emerged winners!</h3> -->
 
-          </p>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators" class="bg-dark">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="12000">
+                  <img class="d-block w-100" src="img/slides/s1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item" data-interval="6000">
+                  <img class="d-block w-100" src="img/slides/s2.jpg" alt="Second slide">
+                </div>
+                <!-- <div class="carousel-item" data-interval="6000">
+                  <img class="d-block w-100" src="img/slides/s2.jpg" alt="Third slide">
+                </div> -->
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          <!-- </p> -->
+          <br><br>
+          <div class="email_1">
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More!</a>
+          </div>
         </div>
       </div>
     </div>
-  </header>
+    </section>
+  <!-- </header> -->
 
   <!-- About Section -->
-  <section class="page-section bg-blue">
+  <section class="page-section bg-blue1">
     <div class="container-fluid">
-      <div class="row justify-content-center">
+      <!-- <div class="row justify-content-center">
         <div class="col-lg-8 mx-auto text-center mb-4">
-          <h2 class="section-heading text-white" id="about">About</h2>
+          <h2 class="section-heading text-off-white" id="about">About</h2>
           <hr class="divider light my-4" />
         </div>
-      </div>
+      </div> -->
 
-      <div class="row">
-        <div class="text-center">
-          <h3 class="about_1 text-white">
-          Welcome to Catalyst! A Non-Profit, Educational and Networking platform to help you connect, interact and draw from the experiences of the success stories of alumni of Indian schools in Oman! We wish to offer you the best takeaway from any experiences shared- whatever be your stream  or your passion. We at Catalyst are aiming to provide the perfect mentoring, since at every point in life when it comes to making major career choices, we seek for people to guide us. We are aiming to support the students in overcoming systematic barriers on their journey from school to a college degree.
-          <br><br><br>
+      <!-- <div class="row"> -->
+        <div class="text-center" id="about">
+          <h1 class="about_1 text-off-white">
+          <!-- Welcome to Catalyst! A Non-Profit, Educational and Networking platform to help you connect, interact and draw from the experiences of the success stories of alumni of Indian schools in Oman! We wish to offer you the best takeaway from any experiences shared- whatever be your stream  or your passion. We at Catalyst are aiming to provide the perfect mentoring, since at every point in life when it comes to making major career choices, we seek for people to guide us. We are aiming to support the students in overcoming systematic barriers on their journey from school to a college degree.
+          <br><br><br> -->
           We are alumni and students of
-          <br><br>
-          </h3>
+          
+          </h1>
           
 
         </div>
 
+
+        <br>
+
+        <div class="col-lg-12 pb-3 text-center text-off-white">
+          <!-- <h2 class="section-heading" id="team">Team</h2> -->
+          <hr class="divider off-white my-4 bg" />
+        </div>
+
+        <br><br>
+
         <!-- Colleges Scroll List -->   
 
-        <div class="scrolling-wrapper">
+        
 
-            <!-- Schools -->
+
+      <!-- </div> -->
+      <!-- <div class="handle_overflow">
+        <div class="scrolling-wrapper">
 
             <div class="card"> <img src="img/ism.png" width="150" height="150"> </div>
             <div class="card"> <img src="img/iswk.png" width="160" height="160"> </div>
@@ -158,54 +617,169 @@
             <div class="card"> <img src="img/iss.png" width="145" height="150"> </div>
 
         </div>
+      </div> -->
 
+      <div class="scrollmenu">
 
-      </div>
-
-      <br><br><br><br>
-
-      <div class="row">
-        
-
-        <br><br><br><br>
-
-        <!-- Colleges Scroll List -->   
-
-        <div class="scrolling-wrapper">
-
-            <!-- Colleges -->
-
-            <div class="card"> <img src="img/iitm.png" width="150" height="150"> </div>
-            <div class="card"> <img src="img/iitr2.png" width="150" height="150"> </div>
-            <div class="card"> <img src="img/iimi.png" width="120" height="160"> </div>
-            <div class="card"> <img src="img/icai1.png" width="200" height="150"> </div>
-            <div class="card"> <img src="img/acca.png" width="150" height="150"> </div>
-
-            <div class="card"> <img src="img/purdue.png" width="170" height="190"> </div>
-            <div class="card"> <img src="img/insead.png" width="150" height="150"> </div>
-            <div class="card"> <img src="img/ntu1.png" width="185" height="150"> </div>
-            
-            
-            <div class="card"> <img src="img/christ.png" width="160" height="150"> </div>
-            <div class="card"> <img src="img/lsr.png" width="150" height="150"> </div>
-
-            <div class="card"> <img src="img/nitk.png" width="170" height="160"> </div>
-            <div class="card"> <img src="img/gmers.png" width="180" height="170"> </div>
-            <div class="card"> <img src="img/ramaiah.png" width="190" height="140"> </div>
-
-
-            <div class="card"> <img src="img/unimumbai.png" width="180" height="170"> </div>
-            <div class="card"> <img src="img/nift.png" width="160" height="160"> </div>
-            <div class="card"> <img src="img/symb.png" width="178" height="160"> </div>
-
-
-
+            <div class="slide1"> <img src="img/ism.png" width="150" height="150"> </div>
+            <div class="slide1"> <img src="img/iswk.png" width="160" height="160"> </div>
+            <div class="slide1"> <img src="img/isg.png" width="160" height="150"> </div>
+            <div class="slide1"> <img src="img/isas.png" width="160" height="150"> </div>            
+            <div class="slide1"> <img src="img/iss.png" width="145" height="150"> </div>
 
         </div>
 
+      <br><br>        
+
+        <br><br>
+
+      <div class="owl-one owl-carousel owl-theme">
+          
+
+            <!-- Colleges -->
+
+            <div class="item"> <img src="img/iitm.png" width="150" height="150"> </div>
+            <div class="item"> <img src="img/iitr2.png" width="150" height="150"> </div>
+            
+            <div class="item center-image"> <img src="img/icai1.png" width="200" height="150"> </div>
+            <div class="item"> <img src="img/acca.png" width="150" height="150"> </div>
+
+            <div class="item center-image"> <img src="img/purdue.png" width="170" height="190"> </div>
+            <div class="item"> <img src="img/insead.png" width="150" height="150"> </div>
+            <div class="item"> <img src="img/ntu3.png" width="185" height="150"> </div>
+            <div class="item iim-indore"> <img src="img/iimi.png" width="120" height="160"> </div>
+            
+            
+            <div class="item"> <img src="img/christ.png" width="160" height="150"> </div>
+            <div class="item"> <img src="img/lsr2.png" width="150" height="150"> </div>
+
+            <div class="item"> <img src="img/nitk.png" width="170" height="160"> </div>
+            <div class="item"> <img src="img/gmers.png" width="180" height="170"> </div>
+            <div class="item ramaiah"> <img src="img/ramaiah.png" width="190" height="140"> </div>
+
+
+            <div class="item"> <img src="img/unimumbai.png" width="180" height="170"> </div>
+            <div class="item"> <img src="img/nift.png" width="160" height="160"> </div>
+            <div class="item"> <img src="img/symb.png" width="178" height="160"> </div>
 
       </div>
 
+      <br><br>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#whycatalyst">Why Catalyst!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Catalyst Section. -->
+  <section class="page-section bg-off-white">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 mx-auto text-center mb-4">
+          <h2 class="section-heading" id="whycatalyst">Why Catalyst</h2>
+          <hr class="divider black my-4" />
+        </div>
+      </div>
+
+      <br>
+
+      <div class="owl-two owl-carousel owl-theme">
+
+            <div class="item"> <img src="img/owl-2/experience.png"> </div>
+            <div class="item"> <img src="img/owl-2/connect.png"> </div>
+            
+            <div class="item"> <img src="img/owl-2/opportunities.png"> </div>
+
+      </div>
+
+      <br><br>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#howwework">How We Work!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work Section -->
+  <section class="page-section bg-blue1">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 mx-auto text-center mb-4">
+          <h2 class="section-heading text-off-white" id="howwework">How We Work</h2>
+          <hr class="divider light my-4" />
+        </div>
+      </div>
+
+      <ul class="timeline">
+  <!-- Item 1 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Step 1</span>
+        <!-- <span class="time-wrapper"><span class="time">Feb 2015</span></span> -->
+      </div>
+      <div class="desc">Fill out our mentorship form linked below.</div>
+    </div>
+  </li>
+
+  <!-- Item 2 -->
+  <li>
+    <div class="direction-l">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Step 2</span>
+        <!-- <span class="time-wrapper"><span class="time">Dec 2014</span></span> -->
+      </div>
+      <div class="desc">We will contact you through Whatsapp within a few days of the form being filled.</div>
+    </div>
+  </li>
+
+  <!-- Item 3 -->
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Step 3</span>
+        <!-- <span class="time-wrapper"><span class="time">July 2014</span></span> -->
+      </div>
+      <div class="desc">Once you respond to our Whatsapp messages, appropriate mentors are assigned to the mentees.</div>
+    </div>
+  </li>
+
+  <li>
+    <div class="direction-l">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Step 4</span>
+        <!-- <span class="time-wrapper"><span class="time">July 2014</span></span> -->
+      </div>
+      <div class="desc">We create Whatsapp groups for the mentor and the mentees. All guidance/mentorship will happen within the groups where all your queries will be cleared. </div>
+    </div>
+  </li>
+
+  <li>
+    <div class="direction-r">
+      <div class="flag-wrapper">
+        <span class="hexa"></span>
+        <span class="flag">Step 5</span>
+        <!-- <span class="time-wrapper"><span class="time">July 2014</span></span> -->
+      </div>
+      <div class="desc">We will inform you of any updates, resources, webinars going to be conducted through Whatsapp itself. </div>
+    </div>
+  </li>
+
+</ul>
+
+
+
+      
+
+
+        <br>
 
       <br><br>
       <div class="row">
@@ -217,12 +791,12 @@
   </section>
 
   <!-- Links Section. -->
-  <section class="page-section">
+  <section class="page-section bg-off-white">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading" id="work">Links</h2>
-          <hr class="divider my-4" />
+          <hr class="divider black my-4" />
         </div>
         <div class="col-sm-12 text-center mt-4 mb-4">
 
@@ -291,125 +865,191 @@
     </div>
   </section>
 
-  <!-- Some fun stuff, leave the boring code for last. -->
-  <section class="page-section bg-green">
-    <div class="container-fluid">
-      <div class="row images-vcenter">
-      
-        <div class="col-lg-12 pb-3 text-center">
+  <!-- Testing Carousel -->
+
+  <section class="page-section bg-blue1">
+
+    <div class="col-lg-12 pb-3 text-center text-off-white">
           <h2 class="section-heading" id="team">Team</h2>
-          <hr class="divider black my-4" />
+          <hr class="divider off-white my-4 bg" />
         </div>
 
-        <div class="col-sm-12 text-center mt-4 mb-4">
+        <div class="col-sm-12 text-center mt-4 mb-4 text-off-white">
 
           <h3 class="mt-4 mb-4">Meet our mentors</h3>
 
         </div>
+        <br>
 
-        <div class="scrolling-wrapper-1">
+      <div class="owl-three owl-carousel owl-theme">
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/surya-suresh-iitm/" target="_blank" rel="noopener noreferrer"> <img src="img/team/surya.jpg" width="150" height="150"> Surya Suresh </a> <br> <div class = "designation"> BEng, IIT Madras </div> </div>
+          <div class="item">
+            <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/surya-suresh-iitm/" target="_blank" rel="noopener noreferrer"> <img src="img/team/surya.jpg" width="150" height="200"> <br> Surya Suresh </a> <br> <div class = "designation"> BEng, IIT Madras </div> </div>
+          </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/abhishek-karanath/" target="_blank" rel="noopener noreferrer"> <img src="img/team/abhishek.jpeg" width="150" height="150">  Abhishek Karanath </a> <br> <div class = "designation"> BTech, IIT Roorkee </div> </div>
+          <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/abhishek-karanath/" target="_blank" rel="noopener noreferrer"> <img src="img/team/abhishek.jpeg" width="150" height="150"> <br> Abhishek Karanath </a> <br> <div class = "designation"> BTech, IIT Roorkee </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/sapna-devi-44a683201/" target="_blank" rel="noopener noreferrer"> <img src="img/team/sapna.jpeg" width="150" height="150"> Sapna Devi </a> <br> <div class = "designation"> CA Intermediate, BCom, HR College </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/sapna-devi-44a683201/" target="_blank" rel="noopener noreferrer"> <img src="img/team/sapna.jpeg" width="150" height="150"><br> Sapna Devi </a> <br> <div class = "designation"> CA Intermediate, BCom, HR College </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/albert-denny-1875531b5/" target="_blank" rel="noopener noreferrer"> <img src="img/team/albert.jpeg" width="150" height="150"> Albert Denny </a> <br> <div class = "designation"> CA, BCom, Christ University </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/albert-denny-1875531b5/" target="_blank" rel="noopener noreferrer"> <img src="img/team/albert.jpeg" width="150" height="150"><br> Albert Denny </a> <br> <div class = "designation"> CA, BCom, Christ University </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/vigneshwar-madhan-8193411a6/" target="_blank" rel="noopener noreferrer"> <img src="img/team/vigneshwar.jpeg" width="150" height="150"> Vigneshwar Madhan </a> <br> <div class = "designation"> CA Intermediate </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/vigneshwar-madhan-8193411a6/" target="_blank" rel="noopener noreferrer"> <img src="img/team/vigneshwar.jpeg" width="150" height="250"><br> Vigneshwar Madhan </a> <br> <div class = "designation"> CA Intermediate </div> </div>
+                </div>
 
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/aditya8100/" target="_blank" rel="noopener noreferrer"> <img src="img/team/aditya.jpeg" width="150" height="150"><br> Aditya Deepak </a> <br> <div class = "designation"> BS, Computer Science, Purdue University </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/aditya8100/" target="_blank" rel="noopener noreferrer"> <img src="img/team/aditya.jpeg" width="150" height="150"> Aditya Deepak </a> <br> <div class = "designation"> BS, Computer Science, Purdue University </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/candicevieira/" target="_blank" rel="noopener noreferrer"> <img src="img/team/candice.jpeg" width="150" height="150"><br> Candice Vieria  </a><br>  <div class = "designation">BBA, MIT WPU, Pune </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/candicevieira/" target="_blank" rel="noopener noreferrer"> <img src="img/team/candice.jpeg" width="150" height="150"> Candice Vieria  </a><br>  <div class = "designation">BBA, MIT WPU, Pune </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/ashokkavya/" target="_blank" rel="noopener noreferrer"> <img src="img/team/kavya.jpeg" width="150" height="150"> <br>Kavya Ashok </a> <br> <div class = "designation"> Phd, Georgia Institute of Technology, BE, NTU </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/ridhishanbhag/" target="_blank" rel="noopener noreferrer"> <img src="img/team/ridhi.jpeg" width="150" height="150"> Ridhi Shanbagh </a> <br> <div class = "designation"> ACCA, BCom, University of Madras </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/ridhishanbhag/" target="_blank" rel="noopener noreferrer"> <img src="img/team/ridhi.jpeg" width="150" height="150"><br> Ridhi Shanbagh </a> <br> <div class = "designation"> ACCA, BCom, University of Madras </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/kirthiunnikrishnan/" target="_blank" rel="noopener noreferrer"> <img src="img/team/kirthi.jpeg" width="150" height="150"> Kirthi Unnikrishnan </a> <br> <div class = "designation"> BCom, HR College </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/kirthiunnikrishnan/" target="_blank" rel="noopener noreferrer"> <img src="img/team/kirthi.jpeg" width="150" height="150"><br> Kirthi Unnikrishnan </a> <br> <div class = "designation"> BCom, HR College </div> </div>
+                </div>
                 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/shreya-unnikrishnan/" target="_blank" rel="noopener noreferrer"> <img src="img/team/shreya.jpeg" width="150" height="150"> Shreya Unnikrishnan </a> <br> <div class = "designation"> MBA, IIM Indore, BTech, RSET </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/shreya-unnikrishnan/" target="_blank" rel="noopener noreferrer"> <img src="img/team/shreya.jpeg" width="150" height="150"><br> Shreya Unnikrishnan </a> <br> <div class = "designation"> MBA, IIM Indore, BTech, RSET </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/ashokkavya/" target="_blank" rel="noopener noreferrer"> <img src="img/team/kavya.jpeg" width="150" height="150"> Kavya Ashok </a> <br> <div class = "designation"> Phd, Georgia Institute of Technology, BE, NTU </div> </div>
+        
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/rujuta-kelkar-594b19168/" target="_blank" rel="noopener noreferrer"> <img src="img/team/rujuta.jpeg" width="150" height="150"> Rujuta Kelkar </a>  <br> <div class = "designation"> MiM, INSEAD, BTech, NIT-K </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/rujuta-kelkar-594b19168/" target="_blank" rel="noopener noreferrer"> <img src="img/team/rujuta.jpeg" width="150" height="150"><br> Rujuta Kelkar </a>  <br> <div class = "designation"> MiM, INSEAD, BTech, NIT-K </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/saatvik-sharma-868b11b3/" target="_blank" rel="noopener noreferrer"> <img src="img/team/saatvik.jpeg" width="150" height="150"> Saatvik Sharma </a>  <br> <div class = "designation"> MBA, INSEAD, CA, B.Com University of Mumbai </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/saatvik-sharma-868b11b3/" target="_blank" rel="noopener noreferrer"> <img src="img/team/saatvik.jpeg" width="150" height="150"> <br>Saatvik Sharma </a>  <br> <div class = "designation"> MBA, INSEAD, CA, B.Com University of Mumbai </div> </div>
+                </div>
 
-                <!-- <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/atul-acharya/" target="_blank" rel="noopener noreferrer"> <img src="img/team/atul.jpeg" width="150" height="150"> Atul Acharya </a> <br> <div class = "designation"> BE, Computer Science, NTU </div> </div> -->
+                <!-- <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/atul-acharya/" target="_blank" rel="noopener noreferrer"> <img src="img/team/atul.jpeg" width="150" height="150"> Atul Acharya </a> <br> <div class = "designation"> BE, Computer Science, NTU </div> </div> -->
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/atharva-j-7b060710b/" target="_blank" rel="noopener noreferrer"> <img src="img/team/atharva.jpeg" width="150" height="150"> Atharva Joshi </a> <br> <div class = "designation"> BTech, NIT-K </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/atharva-j-7b060710b/" target="_blank" rel="noopener noreferrer"> <img src="img/team/atharva.jpeg" width="150" height="150"><br> Atharva Joshi </a> <br> <div class = "designation"> BTech, NIT-K </div> </div>
+                </div>
 
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/aamir-khalid-hussain-a1b436166/" target="_blank" rel="noopener noreferrer"> <img src="img/team/aamir.jpeg" width="150" height="150"><br> Aamir Khalid Hussain </a> <br> <div class = "designation"> BTech, NIT-Bhopal </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/aamir-khalid-hussain-a1b436166/" target="_blank" rel="noopener noreferrer"> <img src="img/team/aamir.jpeg" width="150" height="150"> Aamir Khalid Hussain </a> <br> <div class = "designation"> BTech, NIT-Bhopal </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/nabeel-ahsan-567897187/" target="_blank" rel="noopener noreferrer"> <img src="img/team/nabeel.jpeg" width="150" height="150"> <br>Nabeel Ahsan </a> <br> <div class = "designation"> BTech, VIT </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/nabeel-ahsan-567897187/" target="_blank" rel="noopener noreferrer"> <img src="img/team/nabeel.jpeg" width="150" height="150"> Nabeel Ahsan </a> <br> <div class = "designation"> BTech, VIT </div> </div>
+        <div class="item">
+                  <div class="card-2 text-off-white"> <img src="img/team/sabari.jpg" width="150" height="150"><br> Sabari Nivas  <br> <div class = "designation"> MBBS, GMERS Medical College, Gandhinagar </div> </div>
+                </div>
 
+        <div class="item">
+                  <div class="card-2 text-off-white"> <img src="img/team/kishore.jpg" width="150" height="150"><br> Kishore Kannan  <br> <div class = "designation"> MBBS, Cuddalore Government Medical College </div> </div>
+                </div>
 
-                <div class="card-1"> <img src="img/team/sabari.jpg" width="150" height="150"> Sabari Nivas  <br> <div class = "designation"> MBBS, GMERS Medical College, Gandhinagar </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/joel-menezes/" target="_blank" rel="noopener noreferrer"> <img src="img/team/joel.jpeg" width="150" height="150"><br> Joel Menezes </a> <br> <div class = "designation"> BBA, Christ University </div> </div>
+                </div>
 
-                <div class="card-1"> <img src="img/team/kishore.jpg" width="150" height="150"> Kishore Kannan  <br> <div class = "designation"> MBBS, Cuddalore Government Medical College </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/tony-benny-538a18201/" target="_blank" rel="noopener noreferrer"> <img src="img/team/tony.jpeg" width="150" height="150"><br> Tony Benny </a> <br> <div class = "designation"> BCom., St. Joseph's College of Commerce </div> </div>
+                </div>
 
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/ag23/" target="_blank" rel="noopener noreferrer"> <img src="img/team/anurag.jpeg" width="150" height="150"> <br>Anurag Gupta </a> <br>  <div class = "designation">BTech, Delhi Technological University </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/joel-menezes/" target="_blank" rel="noopener noreferrer"> <img src="img/team/joel.jpeg" width="150" height="150"> Joel Menezes </a> <br> <div class = "designation"> BBA, Christ University </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/harini-murugan-239b36192/" target="_blank" rel="noopener noreferrer"> <img src="img/team/harini.jpeg" width="150" height="150"> <br>Harini Murugan </a> <br> <div class = "designation"> Msc, Fashion Design, PSG </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/tony-benny-538a18201/" target="_blank" rel="noopener noreferrer"> <img src="img/team/tony.jpeg" width="150" height="150"> Tony Benny </a> <br> <div class = "designation"> BCom., St. Joseph's College of Commerce </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/devika-j-4a2650a0/" target="_blank" rel="noopener noreferrer"> <img src="img/team/devika.jpeg" width="150" height="150"><br> Devika J </a> <br> <div class = "designation"> ACCA, LPC Graduate, MA Medical Law Student </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/ag23/" target="_blank" rel="noopener noreferrer"> <img src="img/team/anurag.jpeg" width="150" height="150"> Anurag Gupta </a> <br>  <div class = "designation">BTech, Delhi Technological University </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/marsha-raghunath/" target="_blank" rel="noopener noreferrer"> <img src="img/team/marsha.jpeg" width="150" height="150"><br> Marsha Raghunath </a> <br> <div class = "designation"> B.Sc Statistics, Lady Shri Ram College </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/harini-murugan-239b36192/" target="_blank" rel="noopener noreferrer"> <img src="img/team/harini.jpeg" width="150" height="150"> Harini Murugan </a> <br> <div class = "designation"> Msc, Fashion Design, PSG </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/somnath-mukherjee-zerodha/" target="_blank" rel="noopener noreferrer"> <img src="img/team/somnath.jpeg" width="150" height="150"><br> Somnath Mukherjee </a> <br> <div class = "designation"> CS, Symbiosis Law School </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/devika-j-4a2650a0/" target="_blank" rel="noopener noreferrer"> <img src="img/team/devika.jpeg" width="150" height="150"> Devika J </a> <br> <div class = "designation"> ACCA, LPC Graduate, MA Medical Law Student </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/anugraha-vinayan-3b4890203/" target="_blank" rel="noopener noreferrer"> <img src="img/team/anugraha.jpg" width="150" height="150"><br> Anugraha Vinayan </a> <br> <div class = "designation"> Bachelor of Arts, Social Psychology, McMaster University </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/marsha-raghunath/" target="_blank" rel="noopener noreferrer"> <img src="img/team/marsha.jpeg" width="150" height="150"> Marsha Raghunath </a> <br> <div class = "designation"> B.Sc Statistics, Lady Shri Ram College </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/srishti274/" target="_blank" rel="noopener noreferrer"> <img src="img/team/srishti.jpeg" width="150" height="150"> <br>Srishti Gupta </a> <br> <div class = "designation"> BSc. Communication & Media Studies, Loughborough University </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/somnath-mukherjee-zerodha/" target="_blank" rel="noopener noreferrer"> <img src="img/team/somnath.jpeg" width="150" height="150"> Somnath Mukherjee </a> <br> <div class = "designation"> CS, Symbiosis Law School </div> </div>
+        <div class="item">
+                  <div class="card-2"> <a class="text-off-white" href="https://www.linkedin.com/in/bhavya-sheth-626399145/" target="_blank" rel="noopener noreferrer"> <img src="img/team/bhavya.jpeg" width="150" height="150"><br> Bhavya Sheth </a> <br> <div class = "designation"> BCom, Narsee Monjee College of Commerce & Economics </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/anugraha-vinayan-3b4890203/" target="_blank" rel="noopener noreferrer"> <img src="img/team/anugraha.jpg" width="150" height="150"> Anugraha Vinayan </a> <br> <div class = "designation"> Bachelor of Arts, Social Psychology, McMaster University </div> </div>
+        <div class="item">
+                  <div class="card-2 text-off-white"> <img src="img/team/riya.jpg" width="150" height="150"><br> Riya Reji <br>  <div class = "designation">BA. English, Madras Christian College </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/srishti274/" target="_blank" rel="noopener noreferrer"> <img src="img/team/srishti.jpeg" width="150" height="150"> Srishti Gupta </a> <br> <div class = "designation"> BSc. Communication & Media Studies, Loughborough University </div> </div>
+        <div class="item">
+                  <div class="card-2 text-off-white"> <img id="rotate-akansha" src="img/team/akansha.jpg" width="150" height="150"><br> Akansha Singh <br> <div class = "designation"> BTech, CSE, DIT </div> </div>
+                </div>
 
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/bhavya-sheth-626399145/" target="_blank" rel="noopener noreferrer"> <img src="img/team/bhavya.jpeg" width="150" height="150"> Bhavya Sheth </a> <br> <div class = "designation"> BCom, Narsee Monjee College of Commerce & Economics </div> </div>
+        <div class="item">
+                  <div class="card-2 text-off-white"> <a class="text-off-white" href="https://www.linkedin.com/in/maitri-asher-72a857135/" target="_blank" rel="noopener noreferrer"> <img src="img/team/maitri.jpeg" width="150" height="150"><br> Maitri Asher </a> <br> <div class = "designation"> MCom, BMS, Narsee Monjee College of Commerce and Economics </div> </div>
+                </div>
 
-                <div class="card-1"> <img src="img/team/riya.jpg" width="150" height="150"> Riya Reji <br>  <div class = "designation">BA. English, Madras Christian College </div> </div>
+                <!-- <div class="item">
+                  <div class="card-2 text-off-white"> <a class="text-off-white" href="https://www.linkedin.com/in/rikita-dsouza/" target="_blank" rel="noopener noreferrer"> <div id="no-image"><br><br> </div> Rikita Dsouza </a> <br> <div class = "designation"> BCom, St Agnes College </div> </div>
+                </div>
 
-                <div class="card-1"> <img id="rotate-akansha" src="img/team/akansha.jpg" width="150" height="150"> Akansha Singh <br> <div class = "designation"> BTech, CSE, DIT </div> </div>
-
-                <div class="card-1"> <img src="img/team/maitri.jpeg" width="150" height="150"> Maitri Asher <br> <div class = "designation"> MCom, BMS, Narsee Monjee College of Commerce and Economics </div> </div>
-
-                <div class="card-1"> <a class="text-black" href="https://www.linkedin.com/in/rikita-dsouza/" target="_blank" rel="noopener noreferrer"> <div id="no-image"><br><br> </div> Rikita Dsouza </a> <br> <div class = "designation"> BCom, St Agnes College </div> </div>
-
-                <div class="card-1"> <div id="no-image"><br><br> </div> Ruba Balu <br> <div class = "designation"> MD, AAIMS, Jamaica </div> </div>                
+                <div class="item">
+                  <div class="card-2 text-off-white"> <div id="no-image"><br><br> </div> Ruba Balu <br> <div class = "designation"> MD, AAIMS, Jamaica </div> </div>
+                </div>             
                 
                 
-                
-                <div class="card-1"> <div id="no-image"><br><br> </div> Gunjan Mathur <br> <div class = "designation"> Fashion Communication, NIFT, Mumbai </div> </div>            
+                <div class="item">
+                  <div class="card-2 text-off-white"> <div id="no-image"><br><br> </div> Gunjan Mathur <br> <div class = "designation"> Fashion Communication, NIFT, Mumbai </div> </div>
+                </div>            
 
-                <div class="card-1"> <div id="no-image"><br><br> </div> Uday Kiran Kulkarni <br> <div class = "designation"> MBBS, MS Ramaiah Medical College , Bangalore </div> </div>
+                <div class="item">
+                  <div class="card-2 text-off-white"> <div id="no-image"><br><br> </div> Uday Kiran Kulkarni <br> <div class = "designation"> MBBS, MS Ramaiah Medical College , Bangalore </div> </div>
+                </div> -->
+  </div>
+  <br><br>
 
-
-        </div>
-     </div>
-     <br><br>
-      
-     <div class="text-center">
-        <a class="btn btn-black btn-xl js-scroll-trigger" href="#contact">
+  <div class="text-center">
+        <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">
         Contact Us</a>
      </div>
-   </div>
+    
   </section>
 
+
+
   <!-- Contact section -->
-  <section class="min-padding bg-dark" id="contact">
+  <section class="min-padding bg-off-white" id="contact">
     <div class="container">
     
       <!-- Contact Jason Row -->
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-white">
+          <h2 class="section-heading text-black">
             Contact Us</h2>
           <hr class="divider black my-4" />
-          <h5 class="text-white">If you are interested to know more about us or have any queries, do reach out to us. We appreciate all sorts of feedback.</h5>
+          <h5 class="text-black">If you are interested to know more about us or have any queries, do reach out to us. We appreciate all sorts of feedback.</h5>
           <br>
           <form action="https://formsubmit.co/a0e5d69a1f645452a362d69e734b16ca" method="POST" class="form-horizontal">
 
@@ -453,7 +1093,7 @@
             <i class="fa fa-envelope fa-4x sr-icons"></i>
           </a>
           <a href="javascript:void(0);">
-           <div id="email_1">Email<br>contact@catalystmuscat.com</div>
+           <div class="text-black" id="email_1">Email<br>contact@catalystmuscat.com</div>
           </a>
           
         </div>
@@ -463,7 +1103,7 @@
             <i class="fa fa-facebook-square fa-4x sr-icons"></i>
           </a>
           <a href="https://www.facebook.com/Catalyst-109855687983092/" target="_blank" rel="noopener noreferrer">
-            <p>Facebook</p>
+            <p class="text-black">Facebook</p>
           </a>
         </div>
 
@@ -471,7 +1111,9 @@
           <a href="https://www.instagram.com/catalyst.muscat/" target="_blank" rel="noopener noreferrer">
             <i class="fa fa-instagram fa-4x sr-icons"></i>
           </a>
-          <p><a href="https://www.instagram.com/catalyst.muscat/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+          <a href="https://www.instagram.com/catalyst.muscat/" target="_blank" rel="noopener noreferrer">
+            <p class="text-black">Instagram</p>
+          </a>
         </div>
         
       </div>
@@ -486,6 +1128,107 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <!-- Core theme JS-->
   <script src="js/creative.js"></script>
+
+  <!-- <script src="jquery.min(1).js"></script> -->
+  <!-- <script src="owl.carousel.min.js"></script> -->
+  <!-- <script src="homepage.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('.owl-one').owlCarousel({
+
+    loop:true,
+    // autoHeight: true,
+    margin:100,
+    nav:false,
+    autoplay: true,
+    autoplayTimeout:3500,
+    stagePadding: 50,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+    $('.owl-two').owlCarousel({
+
+    loop:false,
+    // autoHeight: true,
+    margin:100,
+    nav:false,
+    autoplay: false,
+    autoplayTimeout:4500,
+    stagePadding: 50,
+    dots: false,
+    responsive:{
+        0:{
+            items:1,
+            loop: true,
+            autoplay: true
+        },
+        400:{
+            items:1,
+            loop: true,
+            autoplay: true
+        },
+        600:{
+            items:2,
+            loop: true,
+            autoplay: true
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+    $('.owl-three').owlCarousel({
+
+    loop:true,
+    // autoHeight: true,
+    margin:100,
+    nav:false,
+    autoplay: true,
+    autoplayTimeout:3500,
+    stagePadding: 50,
+    dots: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        400:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+
+  </script>
+
+
+
   
 </body>
 </html>
