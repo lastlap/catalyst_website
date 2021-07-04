@@ -345,6 +345,12 @@ hr.off-white {
 
 }
 
+.card-2 img {
+    border-radius: 50%;
+    
+
+}
+
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;               /* width of the entire scrollbar */
